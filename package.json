@@ -1,0 +1,21 @@
+{
+  "name": "dogmon",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^5.11.0",
+    "building-static-server": "^1.0.0",
+    "getusermedia": "^1.0.0",
+    "hark": "^1.1.1",
+    "peerjs": "^0.3.10",
+    "simple-peer": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "make build",
+    "start": "building-static-server -p 3333"
+  },
+  "author": "",
+  "license": "ISC"
+}
