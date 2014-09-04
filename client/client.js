@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     notification = new Notification(msg);
                     setTimeout(function () {
                         notification.close();
-                    }, 250);
+                    }, 500);
                 }
 
             });
