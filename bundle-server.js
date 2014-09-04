@@ -14,6 +14,10 @@ getUserMedia(function(err, stream) {
         };
         var speechEvents = hark(stream, options);
 
+        speechEvents.on('volume_change', function (vol) {
+            console.log(vol);
+        });
+
         speechEvents.on('speaking', function (vol) {
             console.log('Speaking');
             conn.send('speaking');
