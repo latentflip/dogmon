@@ -9,7 +9,9 @@ getUserMedia(function(err, stream) {
 
     peer.on('connection', function (conn) {
 
-        var options = {};
+        var options = {
+            threshold: -20
+        };
         var speechEvents = hark(stream, options);
 
         speechEvents.on('speaking', function (vol) {
